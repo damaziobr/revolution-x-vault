@@ -187,7 +187,7 @@ export class Repository extends Component {
                     size="sm"
                   />
                   &nbsp;
-                  <Button data-testid="update-description" size="sm" onClick={this.updateDescription} type="button">
+                  <Button data-testid="update-description" size="sm" variant="success" onClick={this.updateDescription} type="button">
                     Update Description
                   </Button>
                 </InputGroup>

@@ -398,13 +398,13 @@ export class Snapshots extends Component {
               </>
             )}
             <Col xs="auto">
-              <Button data-testid="new-snapshot" size="sm" variant="primary" href="/snapshots/new">
+              <Button data-testid="new-snapshot" size="sm" variant="success" href="/snapshots/new">
                 New Snapshot
               </Button>
             </Col>
             <Col></Col>
             <Col xs="auto">
-              <Button size="sm" title="Synchronize" variant="primary">
+              <Button size="sm" title="Synchronize" variant="warning">
                 {this.state.isRefreshing ? (
                   <Spinner animation="border" variant="light" size="sm" />
                 ) : (

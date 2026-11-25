@@ -577,7 +577,7 @@ class SnapshotHistoryInternal extends Component {
           </Modal.Body>
 
           <Modal.Footer>
-            <Button size="sm" variant="primary" onClick={this.deleteSelectedSnapshots}>
+            <Button size="sm" variant="danger" onClick={this.deleteSelectedSnapshots}>
               Delete
             </Button>
             <Button size="sm" variant="warning" onClick={this.cancelDelete}>
@@ -607,14 +607,14 @@ class SnapshotHistoryInternal extends Component {
             {this.state.savingSnapshot && <Spinner animation="border" size="sm" variant="primary" />}
             <Button
               size="sm"
-              variant="primary"
+              variant="success"
               disabled={this.state.originalSnapshotDescription === this.state.updatedSnapshotDescription}
               onClick={this.saveSnapshotDescription}
             >
               Update Description
             </Button>
             {this.state.originalSnapshotDescription && (
-              <Button size="sm" variant="secondary" onClick={this.removeSnapshotDescription}>
+              <Button size="sm" variant="danger" onClick={this.removeSnapshotDescription}>
                 Remove Description
               </Button>
             )}
@@ -644,14 +644,14 @@ class SnapshotHistoryInternal extends Component {
             {this.state.savingSnapshot && <Spinner animation="border" size="sm" variant="primary" />}
             <Button
               size="sm"
-              variant="primary"
+              variant="success"
               onClick={this.savePin}
               disabled={this.state.newPinName === this.state.originalPinName || !this.state.newPinName}
             >
               {this.state.originalPinName ? "Update Pin" : "Add Pin"}
             </Button>
             {this.state.originalPinName && (
-              <Button size="sm" variant="secondary" onClick={() => this.removePin(this.state.originalPinName)}>
+              <Button size="sm" variant="danger" onClick={() => this.removePin(this.state.originalPinName)}>
                 Remove Pin
               </Button>
             )}

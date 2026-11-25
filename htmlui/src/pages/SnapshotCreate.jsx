@@ -194,7 +194,7 @@ class SnapshotCreateInternal extends Component {
               size="sm"
               disabled={!this.state.resolvedSource?.path}
               title="Snapshot Now"
-              variant="primary"
+              variant="success"
               onClick={this.snapshotNow}
             >
               Snapshot Now

@@ -545,7 +545,7 @@ export class SetupRepository extends Component {
           Back
         </Button>
         &nbsp;
-        <Button variant="primary" type="submit" data-testid="submit-button">
+        <Button variant="success" type="submit" data-testid="submit-button">
           Create Repository
         </Button>
         {this.loadingSpinner()}
@@ -654,7 +654,7 @@ export class SetupRepository extends Component {
           Back
         </Button>
         &nbsp;
-        <Button variant="primary" type="submit" data-testid="submit-button">
+        <Button variant="success" type="submit" data-testid="submit-button">
           Connect To Repository
         </Button>
         {this.loadingSpinner()}
